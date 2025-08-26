@@ -1,0 +1,10 @@
+TCN Update Detection Evaluation Metrics:
+Accuracy:               0.9991
+Precision:              1.0000
+Recall:                 0.9982
+F1 Score:               0.9991
+Error Rate:             0.0009
+False Positive Rate:    0.0000
+False Negative Rate:    0.0018
+False Discovery Rate:   0.0000
+False Omission Rate:    0.0017

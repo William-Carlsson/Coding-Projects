@@ -1,0 +1,10 @@
+AdaBoost Multi-Class Evaluation Metrics:
+Accuracy:               0.8481
+Precision (Macro):      0.8427
+Recall (Macro):         0.8428
+F1 Score (Macro):       0.8427
+Error Rate:             0.1519
+False Positive Rate:    0.0108
+False Negative Rate:    0.1572
+False Discovery Rate:   0.1573
+False Omission Rate:    0.0108

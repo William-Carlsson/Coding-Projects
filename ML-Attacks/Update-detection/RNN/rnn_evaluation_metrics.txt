@@ -1,0 +1,10 @@
+RNN Update Detection Evaluation Metrics:
+Accuracy:               0.9383
+Precision:              0.9472
+Recall (Sensitivity):   0.9285
+F1 Score:               0.9378
+Error Rate:             0.0617
+False Positive Rate:    0.0518
+False Negative Rate:    0.0715
+False Discovery Rate:   0.0528
+False Omission Rate:    0.0702

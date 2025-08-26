@@ -1,0 +1,11 @@
+GRU Update Detection - Binary Classification Metrics:
+Accuracy:               0.8344
+Precision:              0.8204
+Recall (Sensitivity):   0.8564
+F1 Score:               0.8380
+Error Rate:             0.1656
+False Positive Rate:    0.1877
+False Negative Rate:    0.1436
+False Discovery Rate:   0.1796
+False Omission Rate:    0.1504
+ROC AUC Score:          0.9169

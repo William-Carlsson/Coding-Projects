@@ -1,0 +1,10 @@
+Naive Bayes Multi-Class Evaluation Metrics:
+Accuracy:               0.6000
+Precision (Macro):      0.6602
+Recall (Macro):         0.6124
+F1 Score (Macro):       0.5839
+Error Rate:             0.4000
+False Positive Rate:    0.0285
+False Negative Rate:    0.3876
+False Discovery Rate:   0.3398
+False Omission Rate:    0.0280

@@ -1,0 +1,16 @@
+AC-DC-ESP32-Relay-x4: 0
+ES32A08: 1
+ESP32-CAM: 2
+ESP32-Deep-Sleep-BME280: 3
+base-config: 4
+ESP32-Relay-X1: 5
+KinCony-ADR: 6
+KinCony-ATF: 7
+KinCony-E16P: 8
+KinCony-KC868-A2: 9
+KinCony-KC868-A16: 10
+KinCony-KC868-A16S: 10
+KinCony-KC868-A128: 11
+ESP32-Relay-X1: 12
+KinCony-KC868-A4: 13
+KinCony-KC868-A4S: 14
