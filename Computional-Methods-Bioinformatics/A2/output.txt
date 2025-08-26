@@ -1,0 +1,33 @@
+Author: William Carlsson
+
+Running program on test_q1.txt:
+
+Total number of alpha-carbon atoms in the chain: 10
+Alpha-carbon chain order:
+8
+10
+9
+7
+6
+5
+3
+1
+4
+2
+
+###################################################
+
+Running program on data_q1.txt: 
+
+Total number of alpha-carbon atoms in the chain: 10
+Alpha-carbon chain order:
+8
+9
+3
+4
+6
+7
+5
+10
+1
+2

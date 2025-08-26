@@ -1,0 +1,36 @@
+Author: William Carlsson
+
+My approach to solve task 1
+
+Problem Overview:
+The task is to identify non-essential enzymes in a simplified representatation of glycolysis as shown in figure 1, where the objective is to convert glucose into pyruvate. 
+
+Assumptions: 
+- My first assumption is that a non-essential enzyme is defined as one whose removal (along with its catalyzed reaction) does not prevent the pathway from reaching its endpoint (in our case Pyruvate).
+- So I assume that some metabolites like glyceraldehyde-3-phosphate in figure 1 can be formed through multiple routes and this is what makes certain enzymes non-essential.
+
+Graph Representation:
+The metabolic pathway is modeled as a directed graph:
+- Nodes represent metabolites for exampl glucose and pyruvate.
+- Edges represent reactions, labeled with the enzyme catalyzing them.
+This makes it easier to traverse the pathway and analyse how its connected.
+
+Algorithm Design:
+- Assumptions about figure 1:
+    - I assume that the pathway is as in figure 1 meaning that the pathway is complete and directed from glucose to pyruvate and that no reactions are missing.
+    - Each reaction is correctly associated with its enzyme.
+
+- Steps Taken:
+    1. Build the graph from the provided reactions.
+    2. For each enzyme:
+        - Temporarily remove all reactions catalyzed by that enzyme.
+        - Check if a path still exists from the starting metabolite (glucose) to the endpoint (pyruvate).
+    3. Use a recursive depth-first search (DFS) to check pathway connectivity.
+    4. If the pathway remains intact after removing an enzyme, it is labeled as non-essential.
+
+Output check:
+By manually analyzing the pathway, triosephosphate isomerase is identified as the only non-essential enzyme, as glyceraldehyde-3-phosphate can still be produced via aldolase without requiring the conversion from dihydroxyacetone phosphate.
+This matches the output from my code for task 1 (check output.txt).
+
+
+

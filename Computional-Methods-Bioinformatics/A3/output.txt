@@ -1,0 +1,6 @@
+Author: William Carlsson
+
+Running python task1.py reactions.csv:
+
+Non-essential enzymes: ['triosephosphate isomerase']
+

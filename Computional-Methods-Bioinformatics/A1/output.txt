@@ -1,0 +1,83 @@
+Output from global_alignment.c:
+
+Score matrix:
+          A    T    A    C    G    T
+     0   -2   -4   -6   -8  -10  -12
+A   -2    2    0   -2   -4   -6   -8
+T   -4    0    4    2    0   -2   -4
+C   -6   -2    2    3    4    2    0
+G   -8   -4    0    1    2    6    4
+A  -10   -6   -2    2    0    4    5
+T  -12   -8   -4    0    1    2    6
+
+AT-CGAT
+|| || |
+ATACG-T
+
+Percent Identity: 71.43%
+Hamming Distance: 2
+
+Output from local_aligment.c:
+
+Score matrix:
+          H    D    A    G    A    W    G    H    E    Q
+     0   -2   -4   -6   -8  -10  -12  -14  -16  -18  -20
+P   -2    0    0    0    0    0    0    0    0    0    0
+A   -4    0    0    2    0    2    0    0    0    0    0
+W   -6    0    0    0    1    0    4    2    0    0    0
+H   -8    0    0    0    0    0    2    3    4    2    0
+E  -10    0    0    0    0    0    0    1    2    6    4
+A  -12    0    0    2    0    2    0    0    0    4    5
+E  -14    0    0    0    1    0    1    0    0    2    3
+
+AW-HE
+|| ||
+AWGHE
+
+Output from levenshtein.c:
+
+Levenshtein Distance Matrix:
+          A    T    A    C    G    T
+     0    1    2    3    4    5    6
+A    1    0    1    2    3    4    5
+T    2    1    0    1    2    3    4
+C    3    2    1    1    1    2    3
+G    4    3    2    2    2    1    2
+A    5    4    3    2    3    2    2
+T    6    5    4    3    3    3    2
+
+ATCGAT
+ATACGT
+Levenshtein Distance: 2
+
+Output from assignment6_7.c:
+
+Score matrix:
+          A    T    T    T    T    A
+     0   -2   -4   -6   -8  -10  -12
+A   -2    2    0   -2   -4   -6   -8
+T   -4    0    4    2    0   -2   -4
+T   -6   -2    2    6    4    2    0
+A   -8   -4    0    4    5    3    4
+
+All optimal alignments:
+
+A--TTA
+ATTTTA
+
+A-T-TA
+ATTTTA
+
+AT--TA
+ATTTTA
+
+A-TT-A
+ATTTTA
+
+AT-T-A
+ATTTTA
+
+ATT--A
+ATTTTA
+
+Total number of optimal alignments: 6

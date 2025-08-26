@@ -1,0 +1,18 @@
+Author: William Carlsson
+
+Data Parsing:
+- The program reads the PDB file, focusing on MODEL and ENDMDL records to separate different protein models.
+- Within each model, only alpha-carbon atom coordinates (identified by ATOM records with "CA") are extracted.
+
+Internal Distance Computation:
+- For each model, the program calculates all pairwise distances between alpha-carbon atoms, resulting in a symmetric distance matrix for each model.
+
+Model Comparison:
+- Models are compared using the sum of squared errors (SSE) of corresponding pairwise distances.
+
+Clustering:
+- Pairwise SSE values are calculated for all combinations of models.
+- The program identifies the pairs of models with the highest and lowest SSE, representing the most and least structurally similar pairs, respectively.
+
+Output:
+- The program outputs the pairs of models with the maximum and minimum SSE and the corresponding SSE values.

@@ -1,0 +1,6 @@
+Author: William Carlsson
+
+Running python task1.py:
+
+Max SSE Pair: (12, 14) Value: 8209.776868167231
+Min SSE Pair: (28, 31) Value: 282.3060773146093
