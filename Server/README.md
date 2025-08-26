@@ -1,0 +1,8 @@
+The easiest way to run the program is to use the supplied Dockerfile. Simply build a Docker-image `docker build -t <some tag>` followed by `docker run -p 8080:8080 -p 8081:8081 <some tag>`. Note that you have to expose ports `8080` and `8081` beacuse the default port is `8080` as can be seen at the bottom of the Dockerfile. Proxy server listens to `default_port + 1`. When running via Docker we are not supplying a port, this can easily be modified by adding a `.env` file and defining an environment-variable in the Dockerfile. That is how it'd be done when deploying on e.g. AWS in order to allowe an admin to choose a port for the server to listen on. For simplicity, we decided not to do this with this trivial small program.
+
+If you want to run the application manually, simply `go build` followed by `.\ds_lab1 <port>`. We've also tried to create some tests that test the server(s), you can run them by running `go test`.
+
+Note that for simplicity's sake there is only one program that starts both the main server as well as the proxy server. The main server will start listening on the given port, as well as a proxy server on <port> + 1.
+- You can now send GET-requests for files available in the `./uploaded` folder, e.g. `curl -X GET http://localhost:8080/cat.jpg`, or `curl -X GET http://localhost:8081/cat.jpg` if you want to send it to the proxy server.
+
+- You can also send POST-requests to the main server as a way to upload files. This requires `Content-Type: multipart/form-data`, e.g. `curl --form file="@some_file.txt" http://localhost:8080`. Sending the same request but to the proxy server yields a 501 Not Implemented as the proxy is not to handle POST requests as per lab instructions.

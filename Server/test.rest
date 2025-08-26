@@ -1,0 +1,30 @@
+// Html
+curl -X GET http://localhost:8081/index.html
+
+###
+// Txt
+curl -X GET http://localhost:8081/textfile.txt
+
+###
+// Css
+curl -X GET http://localhost:8081/style.css
+
+###
+// Jpg
+curl -X GET http://localhost:8081/cat.jpg
+
+###
+// Jpeg
+curl -X GET http://localhost:8081/cat.jpeg
+
+###
+// Invalid extension
+curl -X GET http://localhost:8081/index.htmll
+
+###
+// Non existent file
+curl -X GET http://localhost:8081/indexo.html
+
+###
+// Proxy
+curl -X GET http://localhost:8080/index.html -x http://localhost:8081
